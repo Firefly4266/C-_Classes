@@ -19,6 +19,18 @@ namespace Classes
         public Vehicle()
         {
         }
-
+        public string GetDriver()
+        {
+            Console.WriteLine($" Driver Name: {Driver}");
+            return Driver;
+        }
+        public void SetDriver(string Driver)
+        {
+            this.Driver = Driver;
+        }
+        public string GetVehicle(string Vehicle)
+        {
+            return Vehicle;
+        }
     }
 }
