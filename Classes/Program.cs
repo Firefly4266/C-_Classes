@@ -11,10 +11,13 @@ namespace Classes
         static void Main(string[] args)
         {
             Console.Write("\n Greetings user, please enter your VIN number: ");
-            string vin = Console.ReadLine();
+            string VIN = Console.ReadLine();
             Console.Write("\n Please enter the driver's name: ");
-            string driver = Console.ReadLine();
-            Console.WriteLine("\n Thank you for your participation.\n");
+            Vehicle spider = new Vehicle("diononooqwenf", "Dog");
+            spider.SetDriver(Console.ReadLine());
+            spider.GetDriver();
+            spider.GetVehicle();   
+            Console.WriteLine(" Thank you for your participation.\n");
         }
     }
 }

@@ -16,21 +16,29 @@ namespace Classes
             this.VIN = VIN;
             this.Driver = Driver;
         }
+
         public Vehicle()
         {
         }
+
         public string GetDriver()
         {
-            Console.WriteLine($" Driver Name: {Driver}");
+            Console.WriteLine($"\n Driver Name: {Driver}\n");
             return Driver;
         }
+
         public void SetDriver(string Driver)
         {
             this.Driver = Driver;
         }
-        public string GetVehicle(string Vehicle)
+
+        public void GetVehicle()
         {
-            return Vehicle;
+            if(this.Driver != null)
+                Console.WriteLine($" Driver Name: {Driver}\n");
+
+            if (this.VIN != null)
+                Console.WriteLine($" Driver VIN: {VIN}\n");
         }
     }
 }
