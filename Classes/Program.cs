@@ -10,6 +10,8 @@ namespace Classes
     {
         static void Main(string[] args)
         {
+            Color tree = new Color(123, 233, 10, 35);
+            Console.WriteLine(tree.GetAlpha());
         }
     }
 }
