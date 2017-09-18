@@ -12,6 +12,7 @@ namespace Classes
         {
             Color tree = new Color(123, 233, 10, 35);
             Console.WriteLine(tree.GetAlpha());
+            Console.WriteLine(tree.GrayScale());
         }
     }
 }
