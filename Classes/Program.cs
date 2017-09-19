@@ -11,8 +11,16 @@ namespace Classes
         static void Main(string[] args)
         {
             Color tree = new Color(123, 233, 10, 35);
-            Console.WriteLine(tree.GetAlpha());
-            Console.WriteLine(tree.GrayScale());
+            Console.WriteLine($"\n alpha value: {tree.GetAlpha()}\n");
+            Console.WriteLine($"\n Grayscale value: {tree.GrayScale()}\n");
+            Ball ball = new Ball(12, 155);
+            ball.Throw();
+            ball.Throw();
+            ball.Throw();
+            ball.TimesThrown();
+            ball.Pop();
+            ball.Throw();
+            Console.WriteLine($"\n The ball size is now {ball.GetSize()}\n");
         }
     }
 }
